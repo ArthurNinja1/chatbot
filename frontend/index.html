@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHAT</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="app">
+        <header class="topbar">
+            <div class="brand">
+                <span class="brand-mark">🎖️</span>
+                <span class="brand-title">Chat GPTenente</span>
+            </div>
+
+            <button class="icon-button" 
+            id="clear button" title="Limpar conversa"
+            aria-label="Limpar conversa">&#9003</button>
+        </header>
+            <section class="chat" id="chat" aria-live="polite">
+                <div class="welcome" id="welcome">
+                    <div class="welcome-icon">🔰</div>
+                    <h1>Olá, como posso ajudar?</h1>
+                    <p>Converse com o seu chat bot aqui.</p>
+                    <div class="suggestions">
+                        <button data-prompt="Explique como funciona a inteligencia artificial">Explique como funciona a inteligencia artificial</button>
+                        <button data-prompt="Explique como funciona a inteligencia artificial">Estou na escala da guarda de amanhã?</button>
+                        <button data-prompt="Explique como funciona a inteligencia artificial">Quando é a baixa?</button>
+                    </div>
+                </div>
+            </section>
+            <form class="composer" id="form">
+                <div class="input-wrap">
+                    <textarea id="message" rows="1" placeholder="digite sua mensagem" aria-label="Mensagem"></textarea>
+                    <button class="send-button" id="send-button" type="submit" aria-label="Enviar mensagem">&#9658</button>
+                </div>
+                <small>O chat pode cometer erros. verifique as informações importantes recruta, se não vai amassar</small>
+            </form>
+    </main>
+    <script type="module" src="../backend/app.js"></script>
+</body>
+</html>
